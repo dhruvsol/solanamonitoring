@@ -21,7 +21,7 @@ timezone="UTC"            # time zone for epoch ends metric
 #####  END CONFIG  ##################################################################################################
 
 if [ -n  "$binDir" ]; then
-   cli="${binDir}/bin"
+   cli="${binDir}/bin/solana"
 else
    if [ -z $configDir ]; then echo "please configure the config directory"; exit 1; fi
    installDir="$(cat ${configDir}/install/config.yml | grep 'active_release_dir\:' | awk '{print $2}')/bin"
