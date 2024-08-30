@@ -10,7 +10,7 @@
 #####    CONFIG    ##################################################################################################
 configDir="$HOME/.config/solana" # the directory for the config files, eg.: /home/user/.config/solana
 ##### optional:        #
-identityPubkey=(solana-keygen pubkey /home/sol/id.json)      # identity pubkey for the validator, insert if autodiscovery fails
+identityPubkey=$(solana-keygen pubkey /home/sol/id.json)      # identity pubkey for the validator, insert if autodiscovery fails
 voteAccount="votem3UdGx5xWFbY9EFbyZ1X2pBuswfR5yd2oB3JAaj"         # vote account address for the validator, specify if there are more than one or if autodiscovery fails
 additionalInfo="on"    # set to 'on' for additional general metrics like balance on your vote and identity accounts, number of validator nodes, epoch number and percentage epoch elapsed
 binDir="/home/sol/.local/share/solana/install/active_release"              # auto detection of the solana binary directory can fail or an alternative custom installation is preferred, in case insert like $HOME/solana/target/release
